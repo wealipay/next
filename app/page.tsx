@@ -5,5 +5,6 @@ export default async function Home() {
     .from("product")
     .select("id")
     .limit(10);
+  console.log(product);
   return <div>home</div>;
 }

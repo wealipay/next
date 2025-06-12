@@ -1,5 +1,5 @@
 import { createClient } from "./utils/supabase/server";
-const Home = async () => {
+export default async function Home()  {
   const supabase = createClient();
   const { data: product } = await supabase
     .from("product")
@@ -8,4 +8,3 @@ const Home = async () => {
   console.log(product);
   return <div>home</div>;
 };
-export default Home;

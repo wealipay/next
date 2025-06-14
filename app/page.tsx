@@ -1,4 +1,9 @@
+import TabBar from "./components/TabBar";
 export default function Home() {
-  
-  return <div>home</div>;
+  return (
+    <div>
+      <TabBar />
+      home
+    </div>
+  );
 }

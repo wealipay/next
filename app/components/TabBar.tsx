@@ -1,5 +1,5 @@
 "use client";
-import { createClient } from "@/util/supabase/client";
+import { createClient } from "@/utils/supabase/client";
 
 export default async function TabBar() {
   const supabase = createClient();

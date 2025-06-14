@@ -2,8 +2,8 @@
 import { createClient } from "@/utils/supabase/client";
 
 export default async function TabBar() {
-  const supabase = createClient();
-  const { data: product } = await supabase.from("product").select("*");
+  const supabase = await createClient();
+  const { data: product } =  supabase.from("product").select("*");
   return (
     <div>
       <ul>{{ product }}</ul>

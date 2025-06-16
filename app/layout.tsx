@@ -1,8 +1,8 @@
 // app/layout.tsx
-import { ZCOOL_QingKe_HuangYou } from "next/font/google";
+import { Ma_Shan_Zheng } from "next/font/google";
 
 // 初始化字体
-const zcoolFont = ZCOOL_QingKe_HuangYou({
+const zcoolFont = Ma_Shan_Zheng({
   weight: "400", // 此字体只有400一个字重
   subsets: ["latin"], // 必须包含'latin'
   display: "optional", // 优化加载体验

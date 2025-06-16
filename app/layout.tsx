@@ -1,12 +1,25 @@
+import type { Metadata } from "next";
 import { Ma_Shan_Zheng } from "next/font/google";
-// 初始化字体
+
 const font = Ma_Shan_Zheng({
-  weight: "400", // 此字体只有400一个字重
-  subsets: ["latin"], // 必须包含'latin'
-  display: "optional", // 优化加载体验
-  variable: "--font-mashan",// 定义CSS变量
-  preload:true
+  weight: "400",
+  subsets: ["latin"],
+  display: "optional",
+  variable: "--font-mashan",
+  preload: true
 });
+
+export const metadata: Metadata = {
+  title: {
+    default: "wealipay.top",
+    template: "%s | wealipay.top"
+  },
+  description: "薅支付宝羊毛就访问wealipay.top",
+  keywords: ["薅羊毛", "支付宝", "wealipay.top"],
+  icons: {
+    icon: "/favicon.ico"
+  }
+};
 
 export default function RootLayout({
   children
@@ -15,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN" className={font.className}>
-      <body>{children}</body>
+      <body className="h-dvh h-full">{children}</body>
     </html>
   );
 }

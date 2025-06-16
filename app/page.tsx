@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      home
+      home龙首页码头
     </div>
   );
 }

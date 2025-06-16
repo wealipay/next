@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
-.font-noto{
+body {
+  font-family: var(--font-mashan);
+}
+.font-noto {
   font-family: var(--font-noto);
 }

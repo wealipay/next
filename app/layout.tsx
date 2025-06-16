@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Ma_Shan_Zheng, Noto_Sans_SC } from "next/font/google";
-import "./globals.css"
+import React from "react"
+import "./globals.css";
 const font1 = Ma_Shan_Zheng({
   weight: "400",
   subsets: ["latin"],

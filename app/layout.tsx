@@ -5,7 +5,7 @@ import { ZCOOL_QingKe_HuangYou } from "next/font/google";
 const zcoolFont = ZCOOL_QingKe_HuangYou({
   weight: "400", // 此字体只有400一个字重
   subsets: ["latin"], // 必须包含'latin'
-  display: "swap", // 优化加载体验
+  display: "optional", // 优化加载体验
   variable: "--font-zcool" // 定义CSS变量
 });
 

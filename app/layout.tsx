@@ -1,20 +1,14 @@
+import React from "react";
 import type { Metadata } from "next";
-import { Ma_Shan_Zheng, Noto_Sans_SC } from "next/font/google";
-import React from "react"
+import { Ma_Shan_Zheng } from "next/font/google";
 import "./globals.css";
+
 const font1 = Ma_Shan_Zheng({
   weight: "400",
   subsets: ["latin"],
   display: "optional",
   variable: "--font-mashan",
   preload: true
-});
-
-const font2 = Noto_Sans_SC({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-  variable: "--font-noto"
 });
 
 export const metadata: Metadata = {
@@ -35,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN" className={`${font1.className} ${font2.className}`}>
+    <html lang="zh-CN" className={font1.className}>
       <body className="h-dvh h-full">{children}</body>
     </html>
   );

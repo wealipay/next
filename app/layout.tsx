@@ -6,7 +6,7 @@ import "./globals.css";
 const font = Ma_Shan_Zheng({
   weight: "400",
   subsets: ["latin"],
-  display: "optional",
+  display: "swap",
   variable: "--font-mashan",
   preload: true
 });

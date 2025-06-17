@@ -8,7 +8,8 @@ export default function NavBar({
 }) {
   return (
     <div className="fixed inset-x-0 bg-red-600 top-0">
-      <div>hhhh</div>
+      <div>{title}</div>
+      {children}
     </div>
   );
 }

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Ma_Shan_Zheng } from "next/font/google";
 import "./globals.css";
 
-const font1 = Ma_Shan_Zheng({
+const font = Ma_Shan_Zheng({
   weight: "400",
   subsets: ["latin"],
   display: "optional",
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN" className={font1.className}>
+    <html lang="zh-CN" className={font.className}>
       <body className="h-dvh h-full">{children}</body>
     </html>
   );

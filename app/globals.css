@@ -1,1 +1,2 @@
-@import "tailwindcss";
+@import "./assets/css/reset.css"; 
+@import "./assets/css/tailwind.css";

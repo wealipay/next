@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-bg: #f5f6fa;
+  --color-navbar: #559bfb; /*背景色*/
+  --color-btn: #ff2e4b; /*Btn颜色*/
+  --color-btn-1: #fcc795; /*btn white*/
+  --color-white: #fff;
+  --color-gray-6: #666;
+  --color-gray-3:#333;
+  --color-gray-c: #ccc;
+  --color-red:#fa5154;
+}

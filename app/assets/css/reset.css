@@ -1,0 +1,13 @@
+* {
+  @apply leading-none;
+  @apply align-top;
+}
+html {
+  @apply text-base;
+  @apply bg-bg;
+  @apply text-gray-3;
+}
+html,
+body{
+  height: 100vh;
+}

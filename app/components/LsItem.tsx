@@ -14,7 +14,7 @@ export default function LsItem({
 }) {
   return (
     <div
-      className={`ls-item bg-white active:bg-black/10 pl-3 flex items-center ${
+      className={`ls-item relative bg-white active:bg-black/10 pl-3 flex items-center ${
         lg ? "h-16" : "h-12"
       }`}
     >

@@ -1,24 +1,24 @@
 import React from "react";
 export default function NavBar({
+  children,
   title,
-  left,
-  right
+  blue
 }: {
+  children: React.ReactNode;
   title: string;
-  left?: React.ReactNode;
-  right?: React.ReactNode;
+  blue: boolean;
 }) {
-  return (<>
-    <div className="fixed inset-x-0 top-0">
-      <div className="h-11 flex justify-between items-center px-3">
-        <div>{left}</div>
-        <span class="font-bold w-fit h-fit absolute inset-0 m-auto text-white">
-          {{ title }}
-        </span>
-        <div>{right}</div>
+  return (
+    <>
+      <div className="fixed inset-x-0 top-0" className={`${blue && 'bg-red-900'}`}>
+        <div className="h-11 flex justify-between items-center px-3">
+          <span class="font-bold w-fit h-fit absolute inset-0 m-auto text-white">
+            {{ title }}
+          </span>
+          {children}
+        </div>
       </div>
-    </div>
       <div class="h-11"></div>
-</>
+    </>
   );
 }

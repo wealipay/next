@@ -1,10 +1,11 @@
 import NavBar from "./components/NavBar";
+import LsItem from "./components/LsItem";
+
 export default function Home() {
   return (
     <div>
-      <NavBar blue left={<div>磊哥</div>} right={<div>王良</div>}>
-        支付宝薅羊毛
-      </NavBar>
+      <NavBar blue>支付宝薅羊毛</NavBar>
+      <LsItem >gggg磊</LsItem>
     </div>
   );
 }

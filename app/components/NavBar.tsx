@@ -20,7 +20,6 @@ export default function NavBar({
           </span>
           <div>{right}</div>
         </div>
-        
       </div>
       <div className="h-11"></div>
     </>

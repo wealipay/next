@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <div>
       <NavBar blue>支付宝薅羊毛</NavBar>
-      <LsItem left={<Image src={launch} fill />} description="领取了15.元红包">gggg磊</LsItem>
+      <LsItem left={<Image src={launch} fill={true} alt=""/>} description="领取了15.元红包">
+        gggg磊
+      </LsItem>
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <NavBar blue>支付宝薅羊毛</NavBar>
-      <LsItem >gggg磊</LsItem>
+      <LsItem description="领取了15.元红包">gggg磊</LsItem>
     </div>
   );
 }

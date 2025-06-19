@@ -1,4 +1,4 @@
-import LsItemAvatar from '../components/LsItemAvatar';
+import LsItemAvatar from './components/LsItemAvatar';
 import NavBar from "./components/NavBar";
 import Image from "next/image";
 import launch from "./assets/images/launch.jpg";

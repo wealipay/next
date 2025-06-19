@@ -14,12 +14,12 @@ export default function LsItem({
 }: LsItemProps) {
   return (
     <div
-      className={`ls-item bg-red-900  pl-3 flex items-center ${
+      className={`ls-item bg-red-900 active:bg-black/10 pl-3 flex items-center ${
         lg ? "h-16" : "h-12"
       }`}
     >
       <div> {children}</div>
-      <div className="r border-b border-b-gray-6 self-stretch items-center flex flex-1 ml-3 pr-3">
+      <div className="r border-b bg-amber-400 border-b-gray-6 self-stretch items-center flex flex-1 ml-3 pr-3">
         <div className="flex flex-1 flex-col justify-center mr-3">
           <span>{title}</span>
           <div v-if="description" className="mt-2 flex">

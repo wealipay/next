@@ -1,7 +1,7 @@
 import LsItemAvatar from "./components/LsItemAvatar";
 import NavBar from "./components/NavBar";
 import Image from "next/image";
-import src from "../assets/images/launch.jpg";
+import src from "./assets/images/launch.jpg";
 
 export default function Home() {
   return (

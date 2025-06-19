@@ -1,6 +1,9 @@
 import React from "react";
 
-export default function Ls() {
-  return <div className="ls border-y border-y-gray-6">
+interface LsProps {
+  children: React.ReactNode;
+}
+export default function Ls({ children }: LsProps) {
+  return <div className="ls border-y border-y-gray-6">{children}
   </div>;
 }

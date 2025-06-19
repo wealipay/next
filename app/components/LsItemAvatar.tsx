@@ -1,8 +1,6 @@
-
 import Avatar from "./Avatar";
 import LsItem from "./LsItem";
 import React from "react";
-import Image from "next/image";
 
 interface LsItemAvatarProps {
   children: React.ReactNode;
@@ -19,8 +17,7 @@ export default function LsItemAvatar({
 }: LsItemAvatarProps) {
   return (
     <LsItem title={name} description={msg} lg={true}>
-      <Avatar name={name} unread={unread} msg={msg}  />
-
+      <Avatar name={name} unread={unread} msg={msg} />
 
       {children}
     </LsItem>

@@ -5,15 +5,16 @@ import Image from "next/image";
 interface LsItemAvatarProps {
   children: React.ReactNode;
   unread?: React.ReactNode;
-  src: React.ReactNode;
   name: React.ReactNode;
   msg: React.ReactNode;
 }
+const src = new URL("./assets/images/launch.jpg", import.meta.url).href;
+
 export default function LsItemAvatar({
   children,
   unread,
-  src,
-  name,msg
+  name,
+  msg
 }: LsItemAvatarProps) {
   return (
     <LsItem title={name} description={msg} lg={true}>

@@ -4,15 +4,11 @@ import Image from "next/image";
 
 interface LsItemAvatarProps {
   children?: React.ReactNode;
-  title: string;
-  description: string;
   unread?: number;
   src: string;
 }
 export default function LsItemAvatar({
   children,
-  title,
-  description,
   unread,
   src
 }: LsItemAvatarProps) {

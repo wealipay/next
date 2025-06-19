@@ -7,14 +7,12 @@ interface LsItemAvatarProps {
   unread?: React.ReactNode;
   name: React.ReactNode;
   msg: React.ReactNode;
-  src:React.ReactNode;
 }
 export default function LsItemAvatar({
   children,
   unread,
   name,
-  msg,
-  src
+  msg
 }: LsItemAvatarProps) {
   return (
     <LsItem title={name} description={msg} lg={true}>

@@ -1,4 +1,3 @@
-import Avatar from "./Avatar";
 import LsItem from "./LsItem";
 import React from "react";
 import Image from "next/image";

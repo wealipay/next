@@ -31,8 +31,9 @@ export default function LsItemAvatar({
           alt=""
           className="w-full h-full object-cover rounded"
         />
-        {children}
       </div>
+              {children}
+
     </LsItem>
   );
 }

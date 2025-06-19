@@ -1,17 +1,12 @@
 import React from "react";
 
 interface LsItemProps {
-  left?: React.ReactNode;
+  children?: React.ReactNode;
   title: React.ReactNode;
   description: React.ReactNode;
   lg?: boolean;
 }
-export default function LsItem({
-  left,
-  title,
-  description,
-  lg
-}: LsItemProps) {
+export default function LsItem({ children, title, description, lg }: LsItemProps) {
   return (
     <div
       className={`ls-item bg-white active:bg-black/10 pl-3 flex items-center ${

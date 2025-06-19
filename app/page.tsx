@@ -3,7 +3,6 @@ import NavBar from "./components/NavBar";
 import Image from "next/image";
 import src from "./assets/images/launch.jpg";
 import Ls from "./components/Ls";
-const unread = 555;
 export default function Home() {
   return (
     <div>
@@ -18,7 +17,7 @@ export default function Home() {
                 v-if="unread > 0"
                 className="rounded-lg h-4 text-white min-w-4 text-xs px-1 bg-red absolute -right-1 -top-1 flex items-center"
               >
-                {unread}
+                555
               </div>
             </div>
           }

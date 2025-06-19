@@ -7,12 +7,12 @@ export default function Home() {
       <NavBar left="球球" right="哈哈哈就" blue>
         支付宝薅羊毛
       </NavBar>
-      <LsItemAvatar left="ggg" name="**雄" msg="领取了5.88元红包" unread="9">
+      <LsItemAvatar left="ggg" name="**雄" msg="领取了5.88元红包">
         <div className="text-xs order-3 text-gray-6 text-right">
           5月20 05:08
         </div>
       </LsItemAvatar>
-      <LsItemAvatar name="**雄" msg="领取了5.88元红包" unread="9">
+      <LsItemAvatar name="**雄" msg="领取了5.88元红包">
         <div className="text-xs  text-gray-6">5月20 05:08</div>
       </LsItemAvatar>
     </div>

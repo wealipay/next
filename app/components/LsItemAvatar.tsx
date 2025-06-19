@@ -3,13 +3,13 @@ import React from "react";
 import Image from "next/image";
 import src from "../assets/images/launch.jpg";
 interface LsItemAvatarProps {
-  children?: React.ReactNode;
+  left?: React.ReactNode;
   unread?: React.ReactNode;
   name: React.ReactNode;
   msg: React.ReactNode;
 }
 export default function LsItemAvatar({
-  children,
+  left,
   unread,
   name,
   msg
@@ -31,7 +31,7 @@ export default function LsItemAvatar({
           className="w-full h-full object-cover rounded"
         />
       </div>
-      {children}
+      {left}
     </LsItem>
   );
 }

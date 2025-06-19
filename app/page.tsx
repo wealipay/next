@@ -17,7 +17,7 @@ export default function Home() {
                 v-if="unread > 0"
                 className="rounded-lg h-4 text-white min-w-4 text-xs px-1 bg-red absolute -right-1 -top-1 flex items-center"
               >
-               666
+                6666
               </div>
               <Image
                 width={100}

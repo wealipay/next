@@ -32,6 +32,7 @@ export default function LsItemAvatar({
         />
       </div>
       {children}
+      <span className="text-xs text-gray-6 text-right">5月20 05:08</span>
     </LsItem>
   );
 }

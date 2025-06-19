@@ -8,7 +8,7 @@ interface LsItemAvatarProps {
   name: React.ReactNode;
   msg: React.ReactNode;
 }
-import src from "@/assets/images/launch.jpg"
+import src from "../assets/images/launch.jpg"
 export default function LsItemAvatar({
   children,
   unread,

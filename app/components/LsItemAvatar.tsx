@@ -1,3 +1,4 @@
+
 import LsItem from "./LsItem";
 import React from "react";
 import Image from "next/image";
@@ -13,7 +14,7 @@ export default function LsItemAvatar({
   src
 }: LsItemAvatarProps) {
   return (
-    <LsItem title="磊哥" description="五一" lg={true}>
+    <LsItem title={磊哥} description={五一} lg={true}>
       <div className="h-12 w-12 relative">
         <div
           v-if="unread > 0"
@@ -21,7 +22,13 @@ export default function LsItemAvatar({
         >
           {unread}
         </div>
-        <Image width={100} height={100} src={src} alt="" className="w-full h-full object-cover rounded" />
+        <Image
+          width={100}
+          height={100}
+          src={src}
+          alt=""
+          className="w-full h-full object-cover rounded"
+        />
       </div>
       {children}
     </LsItem>

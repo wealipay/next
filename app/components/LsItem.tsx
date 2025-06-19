@@ -8,7 +8,7 @@ interface LsItemProps {
   lg?: boolean;
 }
 export default function LsItem({ left,children,title,description,lg }: LsItemProps) {
-  <div
+  return <div
     className={`ls-item bg-white active:bg-black/10 pl-3 flex items-center ${
       lg ? "h-16" : "h-12"
     }`}

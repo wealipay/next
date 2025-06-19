@@ -17,9 +17,9 @@ export default function LsItemAvatar({
   return (
     <LsItem
       left={left}
+      unread={unread}
       title={name}
       description={msg}
-      unread={unread}
       lg={true}
     >
       {children}

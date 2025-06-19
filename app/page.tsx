@@ -12,7 +12,7 @@ export default function Home() {
       </NavBar>
       <Ls>
         <LsItemAvatar
-          left={
+          unread={
             <div className="h-12 w-12  relative">
               <div
                 v-if="unread > 0"
@@ -20,18 +20,19 @@ export default function Home() {
               >
                 {unread}
               </div>
-              <Image
-                width={100}
-                height={100}
-                src={src}
-                alt=""
-                className="w-full h-full object-cover rounded"
-              />
             </div>
+          }
+          left={
+            <Image
+              width={100}
+              height={100}
+              src={src}
+              alt=""
+              className="w-full h-full object-cover rounded"
+            />
           }
           name="**雄"
           msg="领取了5.88元红包"
-          unread="555"
         >
           <div className="text-xs order-3 text-gray-6 text-right">
             5月20 05:08

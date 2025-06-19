@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import src from "../assets/images/launch.jpg";
+import LsItem from "./LsItem"
 interface LsItemAvatarProps {
   children: React.ReactNode;
   unread?: React.ReactNode;

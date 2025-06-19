@@ -1,4 +1,5 @@
-import Avatar from './Avatar';
+
+import Avatar from "./Avatar";
 import LsItem from "./LsItem";
 import React from "react";
 import Image from "next/image";
@@ -18,7 +19,8 @@ export default function LsItemAvatar({
 }: LsItemAvatarProps) {
   return (
     <LsItem title={name} description={msg} lg={true}>
-<Avatar />
+      <Avatar name={name} unread={unread} msg={msg}  />
+
 
       {children}
     </LsItem>

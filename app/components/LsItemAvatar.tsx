@@ -13,8 +13,8 @@ export default function LsItemAvatar({
   msg
 }: LsItemAvatarProps) {
   return (
-    <LsItem title={name} description={msg} lg={true}>
-      {left}
+    <LsItem left={left} title={name} description={msg} lg={true}>
+    
       {children}
     </LsItem>
   );

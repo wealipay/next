@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <NavBar blue>支付宝薅羊毛</NavBar>
       <Ls>
-        <LsItemAvatar src={src} unread="9">
+        <LsItemAvatar name="玨" msg="gggg"src={src} unread="9">
           ggg
         </LsItemAvatar>
       </Ls>

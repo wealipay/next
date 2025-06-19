@@ -3,8 +3,8 @@ import React from "react";
 interface LsItemProps {
   left?: React.ReactNode;
   children?: React.ReactNode;
-  title: string;
-  description: string;
+  title: React.ReactNode;
+  description: React.ReactNode;
   lg?: boolean;
 }
 export default function LsItem({ left,children,title,description,lg }: LsItemProps) {

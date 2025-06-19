@@ -16,22 +16,22 @@ export default function LsItemAvatar({
 }: LsItemAvatarProps) {
   return (
     <LsItem title={name} description={msg} lg={true}>
-      <div className="h-12 w-12 relative">
-        <div
-          v-if="unread > 0"
-          className="rounded-lg h-4 text-white min-w-4 text-xs px-1 bg-red absolute -right-1 -top-1 flex items-center"
-        >
-          {unread}
+        <div className="h-12 w-12 relative">
+          <div
+            v-if="unread > 0"
+            className="rounded-lg h-4 text-white min-w-4 text-xs px-1 bg-red absolute -right-1 -top-1 flex items-center"
+          >
+            {unread}
+          </div>
+          <Image
+            width={100}
+            height={100}
+            src={src}
+            alt=""
+            className="w-full h-full object-cover rounded"
+          />
         </div>
-        <Image
-          width={100}
-          height={100}
-          src={src}
-          alt=""
-          className="w-full h-full object-cover rounded"
-        />
-      </div>
-      {children}
+        {children}
     </LsItem>
   );
 }

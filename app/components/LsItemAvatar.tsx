@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import src from "../assets/images/launch.jpg";
 interface LsItemAvatarProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   unread?: React.ReactNode;
   name: React.ReactNode;
   msg: React.ReactNode;

@@ -22,7 +22,6 @@ export default function LsItem({
         lg ? "h-16" : "h-12"
       }`}>
       <div>{unread}</div>
-   
       <div>{left}</div>
       <div className="r flex border-b border-b-gray-6 self-stretch items-center flex flex-1 ml-3 pr-3">
         <div className="flex  flex-1 flex-col justify-center mr-3">

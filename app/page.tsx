@@ -20,17 +20,17 @@ export default function Home() {
               >
                 {unread}
               </div>
-
-
             </div>
           }
-          left={              <Image
-                width={100}
-                height={100}
-                src={src}
-                alt=""
-                className="w-full h-full object-cover rounded"
-              />}
+          left={
+            <Image
+              width={100}
+              height={100}
+              src={src}
+              alt=""
+              className="w-full h-full object-cover rounded"
+            />
+          }
           name="**雄"
           msg="领取了5.88元红包"
         >

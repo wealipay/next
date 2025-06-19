@@ -1,6 +1,6 @@
-import LsItemAvatar from "../components/LsItemAvatar";
-import NavBar from "../components/NavBar";
-import Ls from "../components/Ls";
+import LsItemAvatar from "./components/LsItemAvatar";
+import NavBar from "./components/NavBar";
+import Ls from "./components/Ls";
 
 export default function Home() {
   return (

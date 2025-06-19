@@ -14,9 +14,10 @@ export default function Home() {
           left={
             <div className="h-12 w-12  relative">
               <div
+                v-if="unread > 0"
                 className="rounded-lg h-4 text-white min-w-4 text-xs px-1 bg-red absolute -right-1 -top-1 flex items-center"
               >
-                555
+               666
               </div>
               <Image
                 width={100}

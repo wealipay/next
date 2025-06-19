@@ -7,12 +7,8 @@ export default function Home() {
     <div>
       <NavBar blue>支付宝薅羊毛</NavBar>
       <Ls>
-        <LsItemAvatar
-          name="**雄"
-          msg="领取了5.88元红包"
-          unread="9"
-          className="flex justify-between"
-        >
+        <LsItemAvatar name="**雄" msg="领取了5.88元红包" unread="9" 
+>
           <span className="text-xs text-gray-6">5月20 05:08</span>
         </LsItemAvatar>
         <LsItemAvatar name="**雄" msg="领取了5.88元红包" unread="9">

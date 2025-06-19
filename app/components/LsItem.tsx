@@ -1,7 +1,6 @@
 import React from "react";
 
 interface LsItemProps {
-  unread: React.ReactNode;
   left: React.ReactNode;
   children?: React.ReactNode;
   title: React.ReactNode;
@@ -9,7 +8,6 @@ interface LsItemProps {
   lg?: boolean;
 }
 export default function LsItem({
-  unread,
   left,
   children,
   title,
@@ -20,8 +18,8 @@ export default function LsItem({
     <div
       className={`ls-item bg-red-900 active:bg-black/10 pl-3 flex items-center ${
         lg ? "h-16" : "h-12"
-      }`}>
-      <div>{unread}</div>
+      }`}
+    >
       <div>{left}</div>
       <div className="r flex border-b border-b-gray-6 self-stretch items-center flex flex-1 ml-3 pr-3">
         <div className="flex  flex-1 flex-col justify-center mr-3">

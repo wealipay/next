@@ -1,4 +1,4 @@
-import LsItem from "./LsItem";
+import LsItem from './LsItem';
 import React from "react";
 interface LsItemAvatarProps {
   left?: React.ReactNode;
@@ -11,17 +11,11 @@ export default function LsItemAvatar({
   left,
   children,
   name,
-  msg,
-  unread
+  msg
 }: LsItemAvatarProps) {
   return (
-    <LsItem
-      left={left}
-      unread={unread}
-      title={name}
-      description={msg}
-      lg={true}
-    >
+    <LsItem left={left}
+ title={name} description={msg} lg={true}>
       {children}
     </LsItem>
   );

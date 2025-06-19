@@ -5,7 +5,7 @@ interface LsProps {
 }
 export default function Ls({ children }: LsProps) {
   return (
-    <div className="ls border-y border-y-gray-6">
+    <div className="ls flex border-y border-y-gray-6">
       {children}
     </div>
   );

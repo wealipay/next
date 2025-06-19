@@ -18,7 +18,7 @@ export default function LsItem({
         lg ? "h-16" : "h-12"
       }`}
     >
-      {children}
+      <div>{children}</div>
       <div className="r border-b border-b-gray-6 self-stretch items-center flex flex-1 ml-3 pr-3">
         <div className="flex flex-1 flex-col justify-center mr-3">
           <span>{title}</span>

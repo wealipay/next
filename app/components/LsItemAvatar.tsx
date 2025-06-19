@@ -1,7 +1,5 @@
 import LsItem from "./LsItem";
 import React from "react";
-import Image from "next/image";
-import src from "../assets/images/launch.jpg";
 interface LsItemAvatarProps {
   left?: React.ReactNode;
   children?: React.ReactNode;
@@ -18,7 +16,7 @@ export default function LsItemAvatar({
 }: LsItemAvatarProps) {
   return (
     <LsItem title={name} description={msg} lg={true}>
-{left}
+      {left}
       {children}
     </LsItem>
   );

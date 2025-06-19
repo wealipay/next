@@ -31,6 +31,7 @@ export default function Home() {
           }
           name="**雄"
           msg="领取了5.88元红包"
+          unread="555"
         >
           <div className="text-xs order-3 text-gray-6 text-right">
             5月20 05:08

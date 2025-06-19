@@ -2,7 +2,7 @@ import React from "react";
 
 interface LsItemProps {
   left?: React.ReactNode;
-  right?: React.ReactNode;
+  children?: React.ReactNode;
   title: string;
   description: string;
   lg?: boolean;
@@ -23,7 +23,7 @@ export default function LsItem({ left,right,title,description,lg }: LsItemProps)
           </div>
         </div>
       </div>
-      {right}
+      {children}
     </div>
   </div>;
 }

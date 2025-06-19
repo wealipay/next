@@ -16,7 +16,7 @@ export default function LsItemAvatar({
 }: LsItemAvatarProps) {
   return (
     <LsItem title={name} description={msg} lg={true}>
-      <div className="h-12 w-12 relative">
+      <div className="h-12 w-12 order-1 relative">
         <div
           v-if="unread > 0"
           className="rounded-lg h-4 text-white min-w-4 text-xs px-1 bg-red absolute -right-1 -top-1 flex items-center"

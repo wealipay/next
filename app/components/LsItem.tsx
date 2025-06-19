@@ -2,14 +2,12 @@ import React from "react";
 
 interface LsItemProps {
   left?: React.ReactNode;
-  children?: React.ReactNode;
   title: React.ReactNode;
   description: React.ReactNode;
   lg?: boolean;
 }
 export default function LsItem({
   left,
-  children,
   title,
   description,
   lg
@@ -30,7 +28,6 @@ export default function LsItem({
             </div>
           </div>
         </div>
-        {children}
       </div>
     </div>
   );

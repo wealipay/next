@@ -1,6 +1,5 @@
 import LsItemAvatar from "./components/LsItemAvatar";
 import NavBar from "./components/NavBar";
-import launch from "./assets/images/launch.jpg";
 import Ls from "./components/Ls";
 const src = new URL("./assets/images/launch.jpg", import.meta.url).href;
 

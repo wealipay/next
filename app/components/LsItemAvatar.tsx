@@ -17,6 +17,7 @@ export default function LsItemAvatar({
 }: LsItemAvatarProps) {
   return (
     <LsItem title={name} description={msg} lg={true}>
+            {children}
       <div className="h-12 w-12 relative">
         <div
           v-if="unread > 0"
@@ -32,7 +33,6 @@ export default function LsItemAvatar({
           className="w-full h-full object-cover rounded"
         />
       </div>
-              {children}
 
     </LsItem>
   );

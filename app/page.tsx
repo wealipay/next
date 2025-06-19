@@ -8,7 +8,7 @@ export default function Home() {
       <NavBar blue>支付宝薅羊毛</NavBar>
       <Ls>
         <LsItemAvatar name="玨" msg="gggg" unread="9">
-                  <span class="text-xs text-gray-6">5月20 05:08</span>
+          <span className="text-xs text-gray-6">5月20 05:08</span>
         </LsItemAvatar>
       </Ls>
     </div>

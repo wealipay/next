@@ -4,6 +4,6 @@ interface LsProps {
   children: React.ReactNode;
 }
 export default function Ls({ children }: LsProps) {
-  return <div class="ls border-y border-y-gray-6">{children}
+  return <div className="ls border-y border-y-gray-6">{children}
   </div>;
 }

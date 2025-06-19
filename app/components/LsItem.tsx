@@ -30,7 +30,7 @@ export default function LsItem({
             </div>
           </div>
         </div>
-        <div>{children}</div>
+        {children}
       </div>
     </div>
   );

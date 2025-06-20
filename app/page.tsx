@@ -4,7 +4,7 @@ import Ls from "./components/Ls";
 
 export default async function Home() {
   const supabase = await createClient();
-  const { data: product } = await supabase
+  const { data: products } = await supabase
     .from("product")
     .select("*")
     .limit(10);
@@ -13,7 +13,7 @@ export default async function Home() {
       <NavBar left="球球" right="哈哈哈就" blue>
         支付宝薅羊毛
       </NavBar>
-      <Ls></Ls>
+      {products && <Ls productList={products}></Ls>}
     </div>
   );
 }

@@ -11,10 +11,10 @@ export default function Ls({ productList }: Props) {
       {productList.map(product => {
         return (
           <LsItemAvatar
-            unread={unread}
+            unread={product.month}
             src={product.src}
             name={product.name}
-            msg="领取了5.88元红包"
+            msg={`领取了${product.acount}元红包`}
             key={product.id}
           >
             <div className="text-xs order-3 text-gray-6 text-right">

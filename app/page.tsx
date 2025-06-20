@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Image from "next/image";
 import src from "./assets/images/launch.jpg";
 import Ls from "./components/Ls";
+const unread=5555566;
 export default function Home() {
   return (
     <div>

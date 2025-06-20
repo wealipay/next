@@ -18,9 +18,7 @@ export default function Ls({ productList }: Props) {
             key={product.id}
           >
             <div className="text-xs order-3 text-gray-6 text-right">
-              {product.time.slince(0, 10) + " " + product.time.slince(
-                10
-              )}
+              {`${product.time}.slince(0, 10) + " " + ${product.time}.slince(10)`}
             </div>
           </LsItemAvatar>
         );

@@ -11,7 +11,6 @@ export default async function Home() {
     .from("product")
     .select("*")
     .limit(10);
-  console.log(product);
   return (
     <div>
       <NavBar left="球球" right="哈哈哈就" blue>

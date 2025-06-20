@@ -1,7 +1,6 @@
 import React from "react";
 import { IProduct } from "../types/products";
 import LsItemAvatar from "./LsItemAvatar";
-const unread = 5555566;
 type Props = {
   productList: IProduct[];
 };

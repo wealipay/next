@@ -9,6 +9,7 @@ export default function Ls({ productList }: Props) {
   return (
     <div className="ls  border-y border-y-gray-6">
       {productList.map(product => {
+      return(
         <LsItemAvatar
           unread={unread}
           src={product.src}
@@ -19,7 +20,7 @@ export default function Ls({ productList }: Props) {
           <div className="text-xs order-3 text-gray-6 text-right">
             5月20 05:08
           </div>
-        </LsItemAvatar>;
+        </LsItemAvatar>);
       })}
     </div>
   );

@@ -1,14 +1,16 @@
 import React from "react";
-
+import Image from "next/image";
 interface LsItemProps {
-  left: React.ReactNode;
+  unread: React.ReactNode;
+  src: React.ReactNode;
   children?: React.ReactNode;
   title: React.ReactNode;
   description: React.ReactNode;
   lg?: boolean;
 }
 export default function LsItem({
-  left,
+  unread,
+  src,
   children,
   title,
   description,
@@ -20,7 +22,22 @@ export default function LsItem({
         lg ? "h-16" : "h-12"
       }`}
     >
-      <div>{left}</div>
+      <div className="h-12 w-12  relative">
+        <div
+          v-if="unread > 0"
+          className="rounded-lg h-4 text-white min-w-4 text-xs px-1 bg-red absolute -right-1 -top-1 flex items-center"
+        >
+          {unread}
+        </div>
+        <Image
+          width={100}
+          height={100}
+          src={src}
+          alt=""
+          className="w-full h-full object-cover rounded"
+        />
+      </div>
+
       <div className="r flex border-b border-b-gray-6 self-stretch items-center flex flex-1 ml-3 pr-3">
         <div className="flex  flex-1 flex-col justify-center mr-3">
           <span>{title}</span>

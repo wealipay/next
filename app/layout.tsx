@@ -1,8 +1,15 @@
 import React from "react";
 import type { Metadata } from "next";
+import { Ma_Shan_Zheng } from "next/font/google";
 import "./globals.css";
 
-
+const font = Ma_Shan_Zheng({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-mashan",
+  preload: true
+});
 
 export const metadata: Metadata = {
   title: {
@@ -22,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN">
+    <html lang="zh-CN" className={font.className}>
       <body className="h-dvh h-full">{children}</body>
     </html>
   );

@@ -7,7 +7,7 @@ import Ls from "./components/Ls";
 const unread = 5555566;
 export default async function Home() {
   const supabase = await createClient();
-  const { data: product, error } = await supabase
+  const { data: product } = await supabase
     .from("product")
     .select("*")
     .limit(10);

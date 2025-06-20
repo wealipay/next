@@ -1,6 +1,6 @@
 import React from "react";
 import LsItemAvatar from "./components/LsItemAvatar";
-const src = new URL("./assets/images/launch.jpg", import.meta.url).href;
+const src = new URL("../assets/images/launch.jpg", import.meta.url).href;
 const unread = 5555566;
 
 export default function Ls() {

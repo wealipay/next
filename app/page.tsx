@@ -1,7 +1,7 @@
 import LsItemAvatar from "./components/LsItemAvatar";
 import NavBar from "./components/NavBar";
 const src = new URL("./assets/images/launch.jpg", import.meta.url).href;
-import { createClient } from "./utils/supabase/server.ts";
+import { createClient } from "./utils/supabase/server";
 
 import Ls from "./components/Ls";
 const unread = 5555566;

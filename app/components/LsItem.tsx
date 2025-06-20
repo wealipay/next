@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 interface LsItemProps {
   unread: React.ReactNode;
-  src: React.ReactNode;
+  src: string;
   children?: React.ReactNode;
   title: React.ReactNode;
   description: React.ReactNode;
@@ -32,7 +32,7 @@ export default function LsItem({
         <Image
           width={100}
           height={100}
-          src={src}
+          src={src || "../assets/images/launch.jpg"}
           alt=""
           className="w-full h-full object-cover rounded"
         />

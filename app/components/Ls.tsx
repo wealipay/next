@@ -1,5 +1,5 @@
 import React from "react";
-import LsItemAvatar from "./components/LsItemAvatar";
+import LsItemAvatar from "./LsItemAvatar";
 const src = new URL("../assets/images/launch.jpg", import.meta.url).href;
 const unread = 5555566;
 

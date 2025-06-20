@@ -14,6 +14,7 @@ export default function Ls({ productList }: Props) {
           src={product.src}
           name="**雄"
           msg="领取了5.88元红包"
+          key={product.id}
         >
           <div className="text-xs order-3 text-gray-6 text-right">
             5月20 05:08

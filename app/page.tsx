@@ -1,6 +1,7 @@
 import LsItemAvatar from "./components/LsItemAvatar";
 import NavBar from "./components/NavBar";
-import src from "./assets/images/launch.jpg";
+const src = new URL("./assets/images/launch.jpg", import.meta.url).href;
+
 import Ls from "./components/Ls";
 const unread = 5555566;
 export default function Home() {

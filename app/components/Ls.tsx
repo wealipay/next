@@ -10,7 +10,7 @@ export default function Ls({ productList }: Props) {
       {productList.map(product => {
         return (
           <LsItemAvatar
-            unread={product.month}
+            unread={`${product.month}月`}
             src={product.src}
             name={product.name}
             msg={`领取了${product.acount}元红包`}

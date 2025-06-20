@@ -1,8 +1,13 @@
 import NavBar from "./components/NavBar";
-
+import { createClient } from "./utils/supabase/server";
 import Ls from "./components/Ls";
-export default function Home() {
-  
+
+export default async function Home() {
+  const supabase = await createClient();
+  const { data: product } = await supabase
+    .from("product")
+    .select("*")
+    .limit(10);
   return (
     <div>
       <NavBar left="球球" right="哈哈哈就" blue>

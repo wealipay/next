@@ -31,7 +31,7 @@ export default function LsItem({
         >
           {unread}
         </div>
-        <div className="h-4 text-red font-bold font-sans min-w-4 text-xs px-1 -translate-x-1/2 -translate-y-1/2  absolute left-1/2 top-1/2 flex items-center">
+        <div className="h-4 text-red font-bold font-sans min-w-4 text-[20px] px-1 -translate-x-1/2 -translate-y-1/2  absolute left-1/2 top-1/2 flex items-center">
           {acount}
         </div>
         <Image

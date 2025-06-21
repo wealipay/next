@@ -18,7 +18,7 @@ export default function Ls({ productList }: Props) {
             key={product.id}
           >
             <div className="text-xs order-3 text-gray-6 text-right">
-             {product.src} {product.time}
+               {product.time}
             </div>
           </LsItemAvatar>
         );

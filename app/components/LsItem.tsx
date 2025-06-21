@@ -31,8 +31,8 @@ export default function LsItem({
         >
           {unread}
         </div>
-        <div className="h-4 text-white min-w-4 text-xl px-1 -translate-x-1/2 -translate-y-1/2  absolute left-1/2 top-1/2 flex items-center">
-          23.88
+        <div className="h-4 text-gray-3 min-w-4 text-2xl px-1 -translate-x-1/2 -translate-y-1/2  absolute left-1/2 top-1/2 flex items-center">
+          {acount}元
         </div>
         <Image
           width={100}

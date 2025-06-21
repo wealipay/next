@@ -31,6 +31,11 @@ export default function LsItem({
         >
           {unread}
         </div>
+                <Image
+          src="https://wffxhjzivgpczioarvvu.supabase.co/storage/v1/object/public/images/product/1.jpg"
+          width={100}
+          height={100}
+        />
         <Image
           width={100}
           height={100}
@@ -38,6 +43,7 @@ export default function LsItem({
           alt=""
           className="w-full h-full object-cover rounded"
         />
+
       </div>
 
       <div className="r flex border-b border-b-gray-6 self-stretch items-center flex flex-1 ml-3 pr-3">

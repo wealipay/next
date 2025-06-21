@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+const src = new URL("../assets/images/default.jpg", import.meta.url).href;
+
 interface LsItemProps {
   unread: React.ReactNode;
   children?: React.ReactNode;
@@ -33,7 +35,7 @@ export default function LsItem({
         <Image
           width={100}
           height={100}
-          src="../assets/images/launch.jpg"
+          src={src}
           alt=""
           className="w-full h-full object-cover rounded"
         />

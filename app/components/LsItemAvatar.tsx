@@ -2,7 +2,6 @@ import LsItem from "./LsItem";
 import React from "react";
 interface LsItemAvatarProps {
   unread?: string;
-  src: string;
   children?: React.ReactNode;
   name: string;
   acount: number;
@@ -10,7 +9,6 @@ interface LsItemAvatarProps {
 }
 export default function LsItemAvatar({
   unread,
-  src,
   children,
   name,
   acount,
@@ -19,7 +17,6 @@ export default function LsItemAvatar({
   return (
     <LsItem
       unread={unread}
-      src={src}
       name={name}
       acount={acount}
       type={type}

@@ -11,7 +11,6 @@ export default function Ls({ productList }: Props) {
         return (
           <LsItemAvatar
             unread={`${product.month}月`}
-            src={product.src}
             name={`${product.name}领取了`}
             acount={product.acount}
             type={product.type}

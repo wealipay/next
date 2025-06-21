@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 interface LsItemProps {
   unread: React.ReactNode;
-  src: string;
   children?: React.ReactNode;
   name: string;
   acount: number;
@@ -11,7 +10,6 @@ interface LsItemProps {
 }
 export default function LsItem({
   unread,
-  src,
   children,
   name,
   acount,
@@ -31,16 +29,11 @@ export default function LsItem({
         >
           {unread}
         </div>
-        <Image
-          src="https://wffxhjzivgpczioarvvu.supabase.co/storage/v1/object/public/images/product/1.jpg"
-          width={100}
-          height={100}
-          alt=""
-        />
+
         <Image
           width={100}
           height={100}
-          src={src || "../assets/images/launch.jpg"}
+          src="../assets/images/launch.jpg"
           alt=""
           className="w-full h-full object-cover rounded"
         />

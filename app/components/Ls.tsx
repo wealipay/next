@@ -13,8 +13,7 @@ export default function Ls({ productList }: Props) {
             unread={`${product.month}月`}
             src={product.src}
             name={product.name}
-            
-            msg={`领取了${product.acount}${product.type}`}
+            type={`领取了${product.acount}${product.type}`}
             key={product.id}
           >
             <div className="text-xs order-3 text-gray-6 text-right">

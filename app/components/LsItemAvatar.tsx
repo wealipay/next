@@ -6,7 +6,7 @@ interface LsItemAvatarProps {
   children?: React.ReactNode;
   name: string;
   acount: number;
-  msg: string;
+  type: string;
 }
 export default function LsItemAvatar({
   unread,

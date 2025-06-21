@@ -5,7 +5,7 @@ interface LsItemProps {
   src: string;
   children?: React.ReactNode;
   name: string;
-  acount: number;
+  acount: string;
   type: string;
   lg?: boolean;
 }

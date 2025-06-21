@@ -20,7 +20,7 @@ export default function LsItem({
 }: LsItemProps) {
   return (
     <div
-      className={`ls-item bg-red-900 active:bg-black/10 pl-3 flex items-center ${
+      className={`ls-item  active:bg-black/10 pl-3 flex items-center ${
         lg ? "h-16" : "h-12"
       }`}
     >
@@ -31,7 +31,9 @@ export default function LsItem({
         >
           {unread}
         </div>
-
+        <div className="rounded-lg h-4 text-white min-w-4 text-xs px-1 bg-red absolute -right-1/2 -top-1/2 flex items-center">
+          23.88
+        </div>
         <Image
           width={100}
           height={100}

@@ -4,8 +4,8 @@ interface LsItemProps {
   unread: React.ReactNode;
   src: string;
   children?: React.ReactNode;
-  title: string;
-  acount:number,
+  name: string;
+  acount: number;
   type: string;
   lg?: boolean;
 }
@@ -13,7 +13,7 @@ export default function LsItem({
   unread,
   src,
   children,
-  title,
+  name,
   acount,
   type,
   lg
@@ -45,7 +45,8 @@ export default function LsItem({
           <span>{title}</span>
           <div v-if="type" className="mt-2 flex">
             <div className="w-0 flex-1 truncate text-gray-6 text-xs">
-              {acount}{type}
+              {acount}
+              {type}
             </div>
           </div>
         </div>

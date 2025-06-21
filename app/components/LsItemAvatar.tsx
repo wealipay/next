@@ -14,15 +14,15 @@ export default function LsItemAvatar({
   children,
   name,
   acount,
-  msg
+  type
 }: LsItemAvatarProps) {
   return (
     <LsItem
       unread={unread}
       src={src}
-      title={name}
+      name={name}
       acount={acount}
-      type={msg}
+      type={type}
       lg={true}
     >
       {children}

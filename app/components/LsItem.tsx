@@ -31,7 +31,7 @@ export default function LsItem({
         >
           {unread}
         </div>
-        <div className="rounded-lg h-4 text-white min-w-4 text-xs px-1 bg-red absolute -right-1/2 -top-1/2 flex items-center">
+        <div className="h-4 text-white min-w-4 text-xl px-1 bg-red absolute left-1/2 top-1/2 flex items-center">
           23.88
         </div>
         <Image

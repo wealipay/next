@@ -14,10 +14,10 @@ export default function LsItem({
   children,
   name,
   acount,
-  type,
+  type
 }: LsItemProps) {
   return (
-    <div className="ls-item  active:bg-black/10 pl-3 flex items-center ">
+    <div className="ls-item  touch:bg-black/10 pl-3 flex items-center ">
       <div className="h-12 w-12  relative">
         <div
           v-if="unread > 0"

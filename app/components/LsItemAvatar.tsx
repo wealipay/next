@@ -1,3 +1,4 @@
+
 import LsItem from "./LsItem";
 import React from "react";
 interface LsItemAvatarProps {
@@ -15,13 +16,7 @@ export default function LsItemAvatar({
   type
 }: LsItemAvatarProps) {
   return (
-    <LsItem
-      unread={unread}
-      name={name}
-      acount={acount}
-      type={type}
-      lg={true}
-    >
+    <LsItem unread={unread} name={name} acount={acount} type={type}>
       {children}
     </LsItem>
   );

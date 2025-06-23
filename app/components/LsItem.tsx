@@ -20,9 +20,7 @@ export default function LsItem({
 }: LsItemProps) {
   return (
     <div
-      className={`ls-item  active:bg-black/10 pl-3 flex items-center ${
-        lg ? "h-16" : "h-12"
-      }`}
+      className="ls-item  active:bg-black/10 pl-3 flex items-center "
     >
       <div className="h-12 w-12  relative">
         <div

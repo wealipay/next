@@ -8,16 +8,22 @@ interface LsItemProps {
   name: string;
   acount: number;
   type: string;
+  lg?: boolean;
 }
 export default function LsItem({
   unread,
   children,
   name,
   acount,
-  type
+  type,
+  lg
 }: LsItemProps) {
   return (
-    <div className="ls-item  touch:bg-black/10 pl-3 flex items-center ">
+    <div
+      className={`ls-item  active:bg-black/10 pl-3 flex items-center ${
+        lg ? "h-16" : "h-12"
+      }`}
+    >
       <div className="h-12 w-12  relative">
         <div
           v-if="unread > 0"

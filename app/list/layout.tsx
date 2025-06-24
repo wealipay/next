@@ -4,7 +4,7 @@ import React from "react";
 import { createClient } from "../utils/supabase/server";
 import Ls from "../components/Ls";
 
-export default async function ListLayout({ children }: ListLayoutProps) {
+export default async function ListLayout() {
   const supabase = await createClient();
   const { data: products } = await supabase
     .from("product")
@@ -16,7 +16,6 @@ export default async function ListLayout({ children }: ListLayoutProps) {
         ggg
       </NavBar>
       {products && <Ls productList={products}></Ls>}
-
     </>
   );
 }

@@ -8,6 +8,7 @@ export default function ListLayout({ children }: ListLayoutProps) {
   return (
     <>
       <NavBar left={<RiArrowGoBackLine />} blue></NavBar>
+      {children}
     </>
   );
 }

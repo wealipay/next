@@ -9,9 +9,9 @@ export default async function List() {
     .select("*")
     .limit(10);
   return (
-    <div>
+    <>
       <NavBar blue>支付宝薅羊毛</NavBar>
       {products && <Ls productList={products}></Ls>}
-    </div>
+    </>
   );
 }

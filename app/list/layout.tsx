@@ -7,7 +7,7 @@ interface ListLayoutProps {
 export default function ListLayout({ children }: ListLayoutProps) {
   return (
     <>
-      <NavBar left={<RiArrowGoBackLine />}></NavBar>
+      <NavBar left={<RiArrowGoBackLine />} blue></NavBar>
     </>
   );
 }

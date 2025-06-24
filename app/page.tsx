@@ -10,9 +10,7 @@ export default async function Home() {
     .limit(10);
   return (
     <div>
-      <NavBar left="球球" right="哈哈哈就" blue>
-        支付宝薅羊毛
-      </NavBar>
+      <NavBar blue>支付宝薅羊毛</NavBar>
       {products && <Ls productList={products}></Ls>}
     </div>
   );

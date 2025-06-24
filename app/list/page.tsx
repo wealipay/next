@@ -10,8 +10,6 @@ export default async function List() {
     .limit(10);
   return (
     <>
-      <NavBar blue>支付宝薅羊毛</NavBar>
-      {products && <Ls productList={products}></Ls>}
     </>
   );
 }

@@ -1,21 +1,15 @@
 import NavBar from "../components/NavBar";
 import { RiArrowGoBackLine } from "@remixicon/react";
 import React from "react";
-import { createClient } from "../utils/supabase/server";
-import Ls from "../components/Ls";
+
 
 export default async function ListLayout() {
-  const supabase = await createClient();
-  const { data: products } = await supabase
-    .from("product")
-    .select("*")
-    .limit(10);
+  
   return (
     <>
       <NavBar left={<RiArrowGoBackLine />} blue={true}>
-        ggg
+        红包领取列表
       </NavBar>
-      {products && <Ls productList={products}></Ls>}
     </>
   );
 }

@@ -1,3 +1,3 @@
 export default function ListId () {
-  return <div>Listid</div>;
+  return <div>Lid</div>;
 }

@@ -4,9 +4,7 @@ export default async function ListId() {
   const supabase = await createClient();
   const { data: details } = await supabase
     .from("product")
-    .select("*")
-    .eq("id")
-    .single();
+    .select("id")
 
   return <>{details && <Detail detail={details}></Detail>}</>;
 }

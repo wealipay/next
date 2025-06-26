@@ -9,7 +9,7 @@ export default async function ListId() {
   return (
     <div>
       {products.map(product => {
-        return <div>{product.id}</div>;
+        return <div key={product.id}>{product.id}</div>;
       })}
     </div>
   );

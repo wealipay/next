@@ -1,4 +1,4 @@
-import { createClient } from "../utils/supabase/server";
+import { createClient } from "../../utils/supabase/server";
 
 export default async function ListId() {
   const supabase = await createClient();
@@ -6,11 +6,11 @@ export default async function ListId() {
     .from("product")
     .select("*")
     .limit(10);
-  return <div>
-    {products.map(product=>{
-      return(
-      <div>{product.id}</div>
-      )
-    })}
-  </div>;
+  return (
+    <div>
+      {products.map(product => {
+        return <div>{product.id}</div>;
+      })}
+    </div>
+  );
 }

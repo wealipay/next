@@ -1,8 +1,11 @@
 import { createClient } from "../../utils/supabase/server";
-
+interface IProduct {
+  id: string;
+  name: string;
+}
 export default async function ListId() {
   const supabase = await createClient();
-  const { data: products }= await supabase
+  const { data: products } = await supabase
     .from("product")
     .select("*")
     .limit(10);

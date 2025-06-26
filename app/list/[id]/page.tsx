@@ -3,10 +3,10 @@ import { IProduct } from "../../types/products";
 
 export default async function ListId() {
   const supabase = await createClient();
-  const { data: products }: IProduct = await supabase
+  const { data: products }: IProduct = (await supabase
     .from("product")
     .select("*")
-    .limit(10) as {data:IProduct[]|null};
+    .limit(10)).returns<IProduct[]>();
   return (
     <div>
       {products.map(product => {

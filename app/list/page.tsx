@@ -7,5 +7,5 @@ export default async function List() {
     .from("product")
     .select("*")
     .limit(10);
-  return <> gggg</>;
+  return <>{products && <Ls productList={products}></Ls>}</>;
 }

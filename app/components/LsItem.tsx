@@ -21,7 +21,7 @@ export default function LsItem({
   lg
 }: LsItemProps) {
   return (
-    <Link href={`/list/ + ${id}`}>
+    <Link href={`/list/${id}`}>
       <div
         className={`ls-item  active:bg-black/10 pl-3 flex items-center ${
           lg ? "h-16" : "h-12"

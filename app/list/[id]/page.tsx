@@ -1,12 +1,13 @@
 import { createClient } from "../../utils/supabase/server";
-interface IProduct {
-  id: string;
-  name: string;
+import { IProduct } from "../../types/products";
+
+type Props = {
+  products: IProduct[];
   // 其他产品字段...
-}
+};
 export default async function ListId() {
   const supabase = await createClient();
-  const { data: products } = await supabase
+  const { data: products }:Props = await supabase
     .from("product")
     .select("*")
     .limit(10);

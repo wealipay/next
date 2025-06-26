@@ -5,7 +5,7 @@ export default async function ListId() {
   const { data: details } = await supabase
     .from("product")
     .select("*")
-    .limit(10);
+    .limit(1);
 
   return <>{details && <Detail detail={ details}></Detail>}</>;
 }

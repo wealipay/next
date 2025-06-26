@@ -1,15 +1,14 @@
 import Detail from "../../components/Detail";
 import { createClient } from "../../utils/supabase/server";
-export default async function ListId({
-  params,
-}: {
-  params: { id: string };
-}) {
+interface Product {
+  id: number;
+}
+export default async function ListId({ id }: { Product }) {
   const supabase = await createClient();
   const { data: details } = await supabase
     .from("product")
-    .select("id")
-    .eq("id", params.id)
+    .select("*")
+    .eq("id", id)
     .single();
 
   return <>{details && <Detail detail={details}></Detail>}</>;

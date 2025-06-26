@@ -2,19 +2,17 @@ import { createClient } from "../../utils/supabase/server";
 
 export default async function ListId() {
   const supabase = await createClient();
-  const { data: products }: IProduct = await supabase
+  const { data: products }= await supabase
     .from("product")
     .select("*")
     .limit(10);
   return (
     <div>
-       {products.map((product) => (
-          <li key={product.id} className="product-item">
-            <h2>{product.name}</h2>
-            <p>价格: ¥{product.price}</p>
-            {product.description && <p>{product.description}</p>}
-          </li>
-        ))}
+      {products.map(product => (
+        <li key={product.id} className="product-item">
+          <h2>{product.name}</h2>
+        </li>
+      ))}
     </div>
   );
 }

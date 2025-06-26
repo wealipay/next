@@ -1,6 +1,10 @@
 import Detail from "../../components/Detail";
 import { createClient } from "../../utils/supabase/server";
-export default async function ListId() {
+export default async function ListId({
+  params,
+}: {
+  params: { id: string };
+}) {
   const supabase = await createClient();
   const { data: details } = await supabase
     .from("product")

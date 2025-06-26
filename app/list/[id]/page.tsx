@@ -5,7 +5,7 @@ interface IProduct {
 }
 export default async function ListId() {
   const supabase = await createClient();
-  const { data: products } = await supabase
+  const { data: products }:IProduct[] = await supabase
     .from("product")
     .select("*")
     .limit(10);

@@ -6,7 +6,7 @@ type Props = {
 export default function Detail({ detail }: Props) {
   return <>
     {detail.map((item)=>{return(
-    <div key={item.id}>{item.id}</div>
+    <div key={item.id}>{item.id}{item.name}</div>
     )})}
   </>;
 }
